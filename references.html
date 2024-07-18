@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>About - My Website</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="font-sans bg-gray-100 text-gray-900">
+		<header class="relative h-screen">
+			<!-- Background Image -->
+			<div class="absolute top-0 left-0 w-full h-2/4">
+				<img
+					src="./images/GB-Test-15.jpg"
+					alt="Background"
+					class="w-full h-full object-cover"
+				/>
+			</div>
+
+			<!-- Overlay for darkening the image -->
+			<div
+				class="absolute top-0 left-0 w-full h-2/4 bg-black opacity-50"
+			></div>
+
+			<!-- Header Content -->
+			<div
+				class="relative z-10 flex flex-row justify-center items-center h-full"
+			>
+				<h1
+					class="text-white ml-2 text-4xl md:text-6xl w-100 font-bold mb-96"
+				>
+					Referenzen
+				</h1>
+			</div>
+
+			<!-- Navbar -->
+			<div
+				class="fixed top-0 left-0 w-full z-20 bg-opacity-50 text-white py-4"
+			>
+				<div
+					class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center"
+				>
+					<a href="index.html" class="text-xl hover:text-gray-400">
+						<img
+							src="./images/GERNBACH_logo_weiss.png"
+							alt="Logo"
+							class="h-10 sm:h-14 lg:h-20 2xl:h-28"
+						/>
+					</a>
+					<nav class="hidden sm:flex sm:items-center sm:space-x-4">
+						<ul
+							class="flex space-x-4"
+							style="font-size: clamp(0.6rem, 0.8rem, 3.5rem)"
+						>
+							<li>
+								<a href="about.html" class="hover:text-gray-400"
+									>Über uns</a
+								>
+							</li>
+							<li>
+								<a
+									href="services.html"
+									class="hover:text-gray-400"
+									>Leistungen</a
+								>
+							</li>
+							<li>
+								<a
+									href="references.html"
+									class="hover:text-gray-400"
+									>Referenzen</a
+								>
+							</li>
+							<li>
+								<a
+									href="career.html"
+									class="hover:text-gray-400"
+									>Karriere</a
+								>
+							</li>
+							<li>
+								<a
+									href="contact.html"
+									class="hover:text-gray-400"
+									>Kontakt</a
+								>
+							</li>
+						</ul>
+					</nav>
+					<div class="sm:hidden">
+						<!-- Mobile menu button -->
+						<button
+							id="mobile-menu-button"
+							class="text-gray-400 hover:text-white focus:outline-none"
+						>
+							<svg
+								class="h-6 w-6"
+								fill="none"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path d="M4 6h16M4 12h16M4 18h16"></path>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- Mobile menu -->
+			<div id="mobile-menu" class="sm:hidden bg-gray-800">
+				<ul class="px-2 py-3 space-y-2">
+					<li>
+						<a
+							href="index.html"
+							class="block px-4 py-2 text-white hover:bg-gray-700"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a
+							href="about.html"
+							class="block px-4 py-2 text-white hover:bg-gray-700"
+							>Über uns</a
+						>
+					</li>
+					<li>
+						<a
+							href="services.html"
+							class="block px-4 py-2 text-white hover:bg-gray-700"
+							>Leistungen</a
+						>
+					</li>
+					<li>
+						<a
+							href="references.html"
+							class="block px-4 py-2 text-white hover:bg-gray-700"
+							>Referenzen</a
+						>
+					</li>
+					<li>
+						<a
+							href="career.html"
+							class="block px-4 py-2 text-white hover:bg-gray-700"
+							>Karriere</a
+						>
+					</li>
+					<li>
+						<a
+							href="contact.html"
+							class="block px-4 py-2 text-white hover:bg-gray-700"
+							>Kontakt</a
+						>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main class="container mx-auto px-4 py-4 sm:px-6 lg:px-8 mt-16">
+			<section
+				id="home"
+				class="my-8 flex flex-col lg:flex-row items-center lg:px-48"
+			>
+				<div class="lg:w-1/2 lg:pr-4 mb-8 lg:mb-0">
+					<p class="text-lg">
+						ALL-INCLUSIVE-GARTENDIENSTLEISTUNGEN MIT
+					</p>
+					<h2 class="text-2xl font-bold">Fokus auf Nachhaltigkeit</h2>
+				</div>
+				<div class="lg:w-1/2 lg:pl-4">
+					<p>
+						Wir sind Ihr zuverlässiger Partner für die Pflege und
+						Gestaltung Ihres Gartens. Mit unserem ganzheitlichen
+						Ansatz behalten wir Ihren Garten im Blick und sorgen
+						dafür, dass er in voller Blüte erstrahlt. Die
+						persönliche Bindung zu unseren Kunden liegt uns dabei
+						besonders am Herzen. Wir bieten professionelle Beratung,
+						persönliche Planung und exzellenten Service. Unser
+						Engagement für Nachhaltigkeit sorgt dafür, dass Ihr
+						Garten umweltfreundlich gepflegt wird.
+					</p>
+				</div>
+				<div class="flex flex-row justify-center items-center w-full">
+					<div
+						class="h-64 w-60 mx-5 rounded-2xl bg-[#3d712e] hover:bg-[#12385A] flex flex-col items-center justify-center"
+					>
+						<img class="w-20 mb-4" src="./images/leaf.png" alt="" />
+						<h2 class="text-white text-center">Gartengestaltung</h2>
+					</div>
+					<div
+						class="h-64 w-60 mx-5 rounded-2xl bg-[#3d712e] hover:bg-[#12385A] flex flex-col items-center justify-center"
+					>
+						<img
+							class="w-20 mb-4"
+							src="./images/bamboo.png"
+							alt=""
+						/>
+						<h2 class="text-white text-center">
+							Pflege und Service
+						</h2>
+					</div>
+					<div
+						class="h-64 w-60 mx-5 rounded-2xl bg-[#3d712e] hover:bg-[#12385A] flex flex-col items-center justify-center"
+					>
+						<img
+							class="w-20 mb-4"
+							src="./images/masonry.png"
+							alt=""
+						/>
+						<h2 class="text-white text-center">
+							Freiflächenmanagement
+						</h2>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="bg-gray-800 text-white text-center p-4">
+			<p>&copy; 2024 My Website</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>

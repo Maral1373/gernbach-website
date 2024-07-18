@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+	/* font-size: clamp( remکوجیکتر نشه,vw ترجیح اندازه, remبزرگتر نشه );
+	font-size: clamp(2rem, 3rem, 5rem) !important;
+} */
