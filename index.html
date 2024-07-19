@@ -8,11 +8,12 @@
 			href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body class="font-sans bg-gray-100 text-gray-900">
 		<header class="relative h-screen">
 			<!-- Background Image -->
-			<div class="absolute top-0 left-0 w-full h-full">
+			<div class="absolute top-0 left-0 w-full h-full custom-Zindex">
 				<img
 					src="./images/GER-15_websize-rotated.jpg"
 					alt="Background"
@@ -22,7 +23,7 @@
 
 			<!-- Overlay for darkening the image -->
 			<div
-				class="absolute top-0 left-0 w-full h-full bg-black opacity-50"
+				class="absolute top-0 left-0 w-full h-full bg-black opacity-50 custom-Zindex"
 			></div>
 
 			<!-- Header Content -->
@@ -35,8 +36,8 @@
 					Alles wächst <br />mit uns
 				</h1>
 				<button
-					class="text-white p-4 my-7 rounded-lg w-48 sm:w-52 md:w-56 lg:w-72"
-					style="background-color: #3d712e"
+					class="text-green-600 p-4 my-7 rounded-lg w-48 sm:w-52 md:w-56 lg:w-72 custom-button-hover"
+					style="background-color: white"
 				>
 					Kontaktieren Sie uns
 				</button>
@@ -119,7 +120,10 @@
 			</div>
 
 			<!-- Mobile menu -->
-			<div id="mobile-menu" class="sm:hidden bg-gray-800">
+			<div
+				id="mobile-menu"
+				class="fixed top-0 left-0 w-full z-30 bg-gray-800 hidden"
+			>
 				<ul class="px-2 py-3 space-y-2">
 					<li>
 						<a
@@ -167,48 +171,70 @@
 			</div>
 		</header>
 
-		<main class="container mx-auto px-4 py-4 sm:px-6 lg:px-8 mt-16">
+		<main class="container mx-auto sm:px-6 lg:px-8">
 			<section
 				id="home"
-				class="my-8 flex flex-col items-center px-4 lg:px-40"
+				class="flex flex-col items-center px-4 lg:px-40 -my-28 z-10"
 			>
-				<div class="mb-8 text-center">
-					<p>UNSER TEAM</p>
-					<p class="text-lg font-bold">
-						Lerne unsere Gartenkünstler kennen
-					</p>
-				</div>
 				<div
-					class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 w-full"
+					class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full"
 				>
 					<div
-						class="bg-[#3d712e] hover:bg-[#12385A] flex flex-col items-center justify-center"
+						class="flex flex-col sm:flex-row items-center p-4 rounded-xl custom-hover"
+						style="background-color: #12385a"
 					>
 						<img
-							class="rounded-2xl w-full mb-4"
+							class="rounded-2xl w-full sm:w-1/2 lg:w-1/2 mb-4 sm:mb-0 sm:mr-4"
 							src="./images/GER-Portraits-12_websize.jpg"
-							alt=""
+							alt="Biana Gerner"
 						/>
+						<div class="text-white flex flex-col">
+							<h1 class="text-2xl font-bold my-5 p-3">
+								Biana Gerner
+							</h1>
+							<p class="p-3">
+								Inhaberin & Meisterabschluss Garten- und
+								Landschaftsbau
+							</p>
+						</div>
 					</div>
 					<div
-						class="bg-[#3d712e] hover:bg-[#12385A] flex flex-col items-center justify-center"
+						class="flex flex-col sm:flex-row items-center p-4 rounded-xl custom-hover"
+						style="background-color: #12385a"
 					>
 						<img
-							class="rounded-2xl w-full mb-4"
+							class="rounded-2xl w-full sm:w-1/2 lg:w-1/2 mb-4 sm:mb-0 sm:mr-4"
 							src="./images/GER-Portraits-5_websize.jpg"
-							alt=""
+							alt="Stefan Thierbach"
 						/>
+						<div class="text-white flex flex-col">
+							<h1 class="text-2xl font-bold my-5 p-3">
+								Stefan Thierbach
+							</h1>
+							<p class="p-3">
+								Inhaberin & Meisterabschluss Garten- und
+								Landschaftsbau
+							</p>
+						</div>
 					</div>
 					<div
-						class="bg-[#3d712e] hover:bg-[#12385A] flex flex-col items-center justify-center"
+						class="flex flex-col sm:flex-row items-center p-4 rounded-xl custom-hover"
+						style="background-color: #12385a"
 					>
 						<img
-							class="rounded-2xl w-full mb-4"
+							class="rounded-2xl w-full sm:w-1/2 lg:w-1/2 mb-4 sm:mb-0 sm:mr-4"
 							src="./images/GER-Portraits-1_websize.jpg"
-							alt=""
+							alt="Buddy"
 						/>
+						<div class="text-white flex flex-col">
+							<h1 class="text-2xl font-bold my-5 p-3">Buddy</h1>
+							<p class="p-3">Gute Laune Beauftragter</p>
+						</div>
 					</div>
 				</div>
+			</section>
+			<section>
+				<img src="" alt="" />
 			</section>
 		</main>
 		<footer class="bg-gray-800 text-white text-center p-4">
