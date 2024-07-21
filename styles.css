@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+main {
+	max-width: 100% !important;
+}
 .custom-hover:hover {
 	background-color: #374151 !important;
 }
@@ -13,4 +16,21 @@
 .custom-button-hover:hover {
 	background: #3d712e !important;
 	color: white;
+}
+
+.parallax {
+	background-image: url("./images/GB-Test-2.jpg");
+
+	/* Set a specific height */
+	min-height: 500px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.cards {
+	height: 2vh !important;
 }
